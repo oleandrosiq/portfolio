@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Container, Message, Nav } from './styles';
+import { Container, Nav } from './styles';
 
-export function Header() {
+export function Header({ home, about, potfolio }) {
   return (
     <Container>
       <a href="/">Leandrosiq1</a>
@@ -9,10 +9,14 @@ export function Header() {
       <Nav>
         <ul>
           <li>
-            <Link to="/">Início</Link>
+            { 
+              home ? <Link to="/" className="active" >Início</Link> : <Link to="/">Início</Link>
+            }
           </li>
           <li>
-            <Link to="/about">Sobre</Link>
+            { 
+              about ? <Link to="/about" className="active" >Sobre</Link> : <Link to="/about">Sobre</Link>
+            }
           </li>
           <li>
             <Link to="/portfolio">Portfólio</Link>

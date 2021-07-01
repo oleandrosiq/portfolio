@@ -54,6 +54,11 @@ export const Nav = styled.nav`
 
         text-decoration: none;
       }
+
+      a.active {
+        color: var(--color-green);
+        border-bottom: 1px solid var(--color-green);
+      }
     }
   }
 `;

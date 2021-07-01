@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import { Container, Message, Main, Content, Image, Buttons } from './styles';
 import { Header } from '../Header';
 
 export function Home() {
   return (
     <Container>
-      <Header />
+      <Header home />
       <Message>
         👋 Bem-vindo(a) ao meu Portfólio
       </Message>
@@ -18,9 +19,13 @@ export function Home() {
           </p>
 
           <Buttons>
-            <a href="">Curriculo</a>
+            <Link target="_blank" to="https://cdn.discordapp.com/attachments/766834970131169291/859910428938469446/curriculo-leandro.pdf">
+              Curriculo
+            </Link>
 
-            <a href="">Github</a>
+            <Link target="_blank" href="https://github.com/leandrosiq1">
+              Github
+            </Link>
           </Buttons>
         </Content>
       
