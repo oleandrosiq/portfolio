@@ -7,17 +7,28 @@ export const Container = styled.div`
 
 export const BoxAbout = styled.div`
   width: 100%;
+  height: calc(100vh - 80px);
 
   padding: 20px;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 1080px) {
+    height: unset;
+
+    flex-direction: column;
+    gap: 30px;
+
+    text-align: center;
+    padding-bottom: 30px;
+  }
 `;
 
 export const Image = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 
   border-radius: 50%;
   border: 4px solid var(--color-green);
@@ -27,19 +38,39 @@ export const Image = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 1100px) {
+    width: 300px;
+    height: 300px;   
+  }
+
+  @media (max-width: 1080px) {
+    margin: 0 auto;
+  }
 `;
 
 export const Content = styled.div`
   width: 60%;
-  height: 100%;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
   > p {
+    font-size: 20px;
     padding: 20px;
     text-align: justify;
+
+    @media (max-width: 1100px) {
+      font-size: initial;
+    }
+    @media (max-width: 1340px) {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    width: 100%;
   }
 `;
 

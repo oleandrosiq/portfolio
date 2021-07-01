@@ -24,8 +24,9 @@ export function About() {
 
         <BoxAbout>
           <Image />
+
           <Content>
-            <Title>
+             <Title>
               <h1>Sobre mim</h1>
               <span></span>
             </Title>

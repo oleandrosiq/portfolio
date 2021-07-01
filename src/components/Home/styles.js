@@ -18,15 +18,12 @@ export const Message = styled.p`
 
 export const Main = styled.div`
   width: 100%;
-  max-height: 450px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 910px) {
-    max-height: unset;
-
     flex-direction: column-reverse;
     gap: 20px;
   }
