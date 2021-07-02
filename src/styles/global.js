@@ -44,4 +44,14 @@ export const GlobalStyle = createGlobalStyle`
     --color-scrollbar: #4d4d57;
     --color-scrollbar-background: transparent;
   }
+
+  body::-webkit-scrollbar {
+    width: 8px;
+    background: var(--color-scrollbar-background);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+  outline: 1px solid var(--color-scrollbar);
+}
 `;

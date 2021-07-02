@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Container, Nav } from './styles';
 
-export function Header({ home, about, potfolio }) {
+export function Header({ home, about, portfolio }) {
   return (
     <Container>
       <a href="/">Leandrosiq1</a>
@@ -19,7 +19,9 @@ export function Header({ home, about, potfolio }) {
             }
           </li>
           <li>
-            <Link to="/portfolio">Portfólio</Link>
+            { 
+              portfolio ? <Link to="/portfolio" className="active">Portfólio</Link> : <Link to="/portfolio">Portfólio</Link>
+            }
           </li>
         </ul>
       </Nav>

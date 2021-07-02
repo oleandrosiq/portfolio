@@ -7,7 +7,6 @@ export const Container = styled.div`
 
 export const BoxAbout = styled.div`
   width: 100%;
-  height: calc(100vh - 80px);
 
   padding: 20px;
 
@@ -26,22 +25,66 @@ export const BoxAbout = styled.div`
   }
 `;
 
-export const Image = styled.div`
-  width: 400px;
-  height: 400px;
+export const BoxImage = styled.div`
+  width: 300px;
+  height: 300px;
 
   border-radius: 50%;
   border: 4px solid var(--color-green);
   margin-right: 100px;
 
-  background-image: url('https://github.com/leandrosiq1.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  > img {
+    width: 100%;
+    height: 100%;
 
-  @media (max-width: 1100px) {
-    width: 300px;
-    height: 300px;   
+    border-radius: 50%;
+  }
+
+  > nav {
+    width: 100%;
+    height: 50px;
+
+    background: none;
+
+    > ul {
+      height: 100%;
+      list-style: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      > li {
+        &:nth-child(1) {
+          margin-top: -60px;
+        }
+
+        &:nth-child(2) {
+          margin-top: -10px;
+        }
+
+        &:nth-child(3) {
+          margin-top: -8px;
+        }
+
+        &:nth-child(4) {
+          margin-top: -60px;
+        }
+
+        transition: .2s;
+        &:hover {
+          transform: scale(1.07);
+        }
+
+        > a {
+          > img {
+          width: 30px;
+          height: 30px;
+          }
+        }
+      }
+    }
   }
 
   @media (max-width: 1080px) {
@@ -57,16 +100,8 @@ export const Content = styled.div`
   flex-direction: column;
 
   > p {
-    font-size: 20px;
     padding: 20px;
     text-align: justify;
-
-    @media (max-width: 1100px) {
-      font-size: initial;
-    }
-    @media (max-width: 1340px) {
-      font-size: 17px;
-    }
   }
 
   @media (max-width: 1080px) {

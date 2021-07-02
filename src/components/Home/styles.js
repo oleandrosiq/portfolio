@@ -5,14 +5,16 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 
-export const Message = styled.p`
-  font-size: 20px;
-  color: var(--color-green);
-  
-  margin: 24px 0;
+export const Wrapper = styled.div`
+  width: 100%;
+  height: calc(100vh - 200px);
 
-  @media (max-width: 550px) {
-    font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 950px) {
+    height: unset;
   }
 `;
 
@@ -42,26 +44,10 @@ export const Content = styled.div`
 
   > h1 {
     font-size: 34px;
-
-    @media (min-width: 1190px) {
-      font-size: 40px;
-    }
-
-    @media (min-width: 1300px) {
-      font-size: 45px;
-    }
   }
   > h2 {
     font-size: 28px;
     color: var(--color-green);
-
-    @media (min-width: 1190px) {
-      font-size: 35px;
-    }
-
-    @media (min-width: 1300px) {
-      font-size: 40px;
-    }
   }
   > p {
     font-size: 20px;
@@ -96,8 +82,8 @@ export const Image = styled.div`
   }
 
   @media (min-width: 1190px) {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
   }
 `;
 
@@ -141,13 +127,4 @@ export const Buttons = styled.div`
     height: 50px;
   }
   }
-`;
-
-export const Wrapper = styled.div`
-  width: 100%;
-  height: calc(100vh - 160px);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
