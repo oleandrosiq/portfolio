@@ -5,7 +5,6 @@ import {
   BoxAbout, 
   BoxImage, 
   Content, 
-  Title,
   Languages,
 } from './styles';
 
@@ -22,12 +21,10 @@ import linkedinImg from '../../assets/images/linkedin.svg';
 import gmail from '../../assets/images/gmail.svg';
 import whatsappImg from '../../assets/images/whatsapp.svg';
 
-// https://api.whatsapp.com/send?phone=5519999669175
-
-export function About() {
+export function About({ toggleTheme }) {
   return (
       <Container>
-        <Header about />
+        <Header about toggleTheme={toggleTheme} />
         <Message text="😇 Um pouco sobre mim" />
 
         <BoxAbout>
@@ -36,25 +33,25 @@ export function About() {
             <nav>
               <ul>
                 <li>
-                  <a href="">
+                  <a target="_blank" href="https://github.com/leandrosiq1">
                     <img src={githubImg} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="">
+                  <a target="_blank" href="https://www.linkedin.com/in/leandrosiq1/">
                     <img src={linkedinImg} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="">
+                  <a target="_blank" href="mailto:le_kts12@hotmail.com">
                     <img src={gmail} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="">
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=5519999669175">
                     <img src={whatsappImg} />
                   </a>
                 </li>
@@ -95,6 +92,9 @@ export function About() {
                 </li>
               </ul>
             </Languages>
+            <span>
+              "🚀 quando seu superior passa uma tarefa para você... veja isso como uma oportunidade de fazer a diferença!"
+            </span>
           </Content>
         </BoxAbout>
       </Container>

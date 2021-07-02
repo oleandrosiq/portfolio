@@ -7,9 +7,13 @@ export const Container = styled.div`
 
 export const Cards = styled.div`
   width: 100%;
-  height: 500px;
-
+  
+  padding-bottom: 100px;
   margin: 20px auto;
 
-  background: var(--color-shape);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 `;

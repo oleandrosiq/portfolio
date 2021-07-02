@@ -28,19 +28,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --color-background: #121214;
+    --color-background: ${props => props.theme.colors.background};
     --color-green: #04d361;
-    --color-red: #ce4a4a;
-    --color-orange: #ff7a29;
-    --color-yellow: #FFCD1E;
-    --color-secondary: #e1e1e6;
     --color-shape: #202024;
     --color-shape-hover: #29292e;
-    --color-icons: #41414d;
-    --color-borders: #323238;
     --color-black: #09090a;
     --color-white: #fff;
-    --color-purple: #8257e6;
     --color-scrollbar: #4d4d57;
     --color-scrollbar-background: transparent;
   }
@@ -51,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body::-webkit-scrollbar-thumb {
-  background-color: var(--color-scrollbar);
-  outline: 1px solid var(--color-scrollbar);
-}
+    background-color: var(--color-scrollbar);
+    outline: 1px solid var(--color-scrollbar);
+  }
 `;

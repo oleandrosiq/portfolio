@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
 import { Container, Main, Content, Image, Buttons, Wrapper } from './styles';
+
 import { Header } from '../Header';
 import { Message } from '../Message';
 
-export function Home() {
+export function Home({ toggleTheme }) {
   return (
     <Container>
-      <Header home />
+      <Header home toggleTheme={toggleTheme} />
       <Message text="👋 Bem-vindo(a) ao meu Portfólio" />
 
       <Wrapper>
@@ -20,13 +20,13 @@ export function Home() {
             </p>
 
             <Buttons>
-              <Link target="_blank" to="https://cdn.discordapp.com/attachments/766834970131169291/860141330415616060/curriculo-leandro.pdf">
+              <a target="_blank" href="https://cdn.discordapp.com/attachments/766834970131169291/860141330415616060/curriculo-leandro.pdf">
                 Curriculo
-              </Link>
+              </a>
 
-              <Link target="_blank" href="https://github.com/leandrosiq1">
+              <a target="_blank" href="https://github.com/leandrosiq1">
                 Github
-              </Link>
+              </a>
             </Buttons>
           </Content>
           

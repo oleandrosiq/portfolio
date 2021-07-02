@@ -4,8 +4,9 @@ export const Container = styled.header`
   width: 100%;
   height: 65px;
 
-  border-bottom: 1px solid var(--color-shape);
+  border-bottom: 1px solid ${props => props.theme.colors.shape};
   position: relative;
+  background: ${props => props.theme.colors.background};
 
   display: flex;
   align-items: center;
@@ -13,7 +14,7 @@ export const Container = styled.header`
 
   > a {
     font-size: 33px;
-    color: var(--color-white);
+    color: ${props => props.theme.colors.text};
 
     text-decoration: none;
     font-family: 'Lobster', sans-serif;
@@ -23,7 +24,7 @@ export const Container = styled.header`
 
     &:hover {
       transform: scale(1.05) rotate(-10deg);
-      color: var(--color-green);
+      color: ${props => props.theme.colors.primary};
     }
   }
 `;
@@ -44,20 +45,20 @@ export const Nav = styled.nav`
         transform: scale(1.09);
 
         a {
-          color: var(--color-green);
+          color: ${props => props.theme.colors.primary};
         }
       }
 
       a {
         font-size: 20px;
-        color: var(--color-white);
+        color: ${props => props.theme.colors.text};
 
         text-decoration: none;
       }
 
       a.active {
-        color: var(--color-green);
-        border-bottom: 1px solid var(--color-green);
+        color: ${props => props.theme.colors.primary};
+        border-bottom: 1px solid ${props => props.theme.colors.primary};
       }
     }
   }

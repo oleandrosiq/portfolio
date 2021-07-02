@@ -4,7 +4,7 @@ export const Container = styled.div`
   font-size: 20px;
   
   text-align: center;
-  color: var(--color-green);
+  color: ${props => props.theme.colors.primary};
   
   margin: 24px 0;
 

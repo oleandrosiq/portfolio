@@ -13,6 +13,7 @@ export const BoxAbout = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: ${props => props.theme.colors.text};
 
   @media (max-width: 1080px) {
     height: unset;
@@ -30,7 +31,7 @@ export const BoxImage = styled.div`
   height: 300px;
 
   border-radius: 50%;
-  border: 4px solid var(--color-green);
+  border: 4px solid ${props => props.theme.colors.primary};
   margin-right: 100px;
 
   > img {
@@ -102,6 +103,11 @@ export const Content = styled.div`
   > p {
     padding: 20px;
     text-align: justify;
+  }
+
+  > span {
+    color: ${props => props.theme.colors.primary};
+    margin-top: 10px;
   }
 
   @media (max-width: 1080px) {

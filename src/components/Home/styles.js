@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
+  color: ${props => props.theme.colors["color-text"]};
 `;
 
 export const Wrapper = styled.div`
@@ -36,6 +37,7 @@ export const Content = styled.div`
   height: 100%;
 
   padding: 30px;
+  color: ${props => props.theme.colors.text};
 
   @media (max-width: 910px) {
     width: 100%;
@@ -47,7 +49,7 @@ export const Content = styled.div`
   }
   > h2 {
     font-size: 28px;
-    color: var(--color-green);
+    color: ${props => props.theme.colors.primary};
   }
   > p {
     font-size: 20px;
@@ -64,7 +66,7 @@ export const Image = styled.div`
   height: 300px;
 
   border-radius: 50%;
-  border: 4px solid var(--color-green);
+  border: 4px solid ${props => props.theme.colors.primary};
   margin-right: 100px;
 
   background-image: url('https://github.com/leandrosiq1.png');
@@ -102,7 +104,7 @@ export const Buttons = styled.div`
     width: 170px;
     height: 40px;
 
-    background: var(--color-shape);
+    background: ${props => props.theme.colors.shape};
     border-radius: 5px;
 
     display: inline-flex;
@@ -117,14 +119,14 @@ export const Buttons = styled.div`
     &:hover {
       transform: scale(1.05);
       
-      background: var(--color-shape-hover);
-      border: 1px solid var(--color-green);
-      color: var(--color-green);
+      background: ${props => props.theme.colors.button};
+      border: 1px solid ${props => props.theme.colors.primary};
+      color: ${props => props.theme.colors.text};
     }
 
     @media (min-width: 1190px) {
-    width: 250px;
-    height: 50px;
-  }
+      width: 250px;
+      height: 50px;
+    }
   }
 `;

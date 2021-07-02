@@ -1,7 +1,15 @@
+import Switch from 'react-switch';
+import { shade } from 'polished';
+
 import { Link } from 'react-router-dom';
 import { Container, Nav } from './styles';
 
-export function Header({ home, about, portfolio }) {
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
+
+export function Header({ home, about, portfolio, toggleTheme }) {
+  const { title, colors } = useContext(ThemeContext);
+
   return (
     <Container>
       <a href="/">Leandrosiq1</a>
@@ -23,6 +31,17 @@ export function Header({ home, about, portfolio }) {
               portfolio ? <Link to="/portfolio" className="active">Portfólio</Link> : <Link to="/portfolio">Portfólio</Link>
             }
           </li>
+          <Switch 
+            onChange={toggleTheme}
+            checked={title === 'dark'}
+            checkedIcon={false}
+            uncheckedIcon={false}
+            width={40}
+            height={15}
+            handleDiameter={20}
+            offColor={shade(0.15, colors.primary)}
+            onColor={colors.shape}
+          />
         </ul>
       </Nav>
     </Container>
