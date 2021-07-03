@@ -4,11 +4,7 @@ import Switch from 'react-switch';
 import { shade } from 'polished';
 
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import { Container, Nav, NavMobile, MenuMobile } from './styles';
-=======
 import { Container, Nav, Wrapper, WrapperMobile, NavMobile, ContainerMobile } from './styles';
->>>>>>> e498081e94a546bad38d0ca46dd43488d6a52ad4
 
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
@@ -16,7 +12,6 @@ import { ThemeContext } from 'styled-components';
 export function Header({ home, about, portfolio, toggleTheme }) {
   const { title, colors } = useContext(ThemeContext);
   const [navMobile, setNavMobile] = useState(false);
-
 
   function handleNavMobile() {
     setNavMobile(!navMobile);

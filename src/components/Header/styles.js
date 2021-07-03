@@ -31,20 +31,6 @@ export const Wrapper = styled.div`
       color: ${props => props.theme.colors.primary};
     }
   }
-<<<<<<< HEAD
-`;
-
-export const Nav = styled.nav`
-  @media (max-width: 700px) {
-    display: none;
-  }
-=======
-
-  @media (max-width: 620px) {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
 `;
 
 export const Nav = styled.nav`
@@ -179,7 +165,6 @@ export const ContainerMobile = styled.div`
 
 export const NavMobile = styled.div`
   margin: 0 auto;
->>>>>>> e498081e94a546bad38d0ca46dd43488d6a52ad4
   
   > ul {
     display: flex;
