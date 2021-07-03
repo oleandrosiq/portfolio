@@ -4,6 +4,11 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   color: ${props => props.theme.colors["color-text"]};
+
+  @media (max-width: 550px) {
+    width: 100%;
+    padding: 0 10px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -59,6 +64,25 @@ export const Content = styled.div`
       font-size: 23px;
     }
   }
+
+  @media (max-width: 550px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    > h1 {
+      font-size: 28px;
+    }
+    > h2 {
+      font-size: 22px;
+      color: ${props => props.theme.colors.primary};
+    }
+    > p {
+      font-size: 15px;
+      padding-top: 40px;
+    }
+  }
 `;
 
 export const Image = styled.div`
@@ -100,6 +124,10 @@ export const Buttons = styled.div`
   justify-content: center;
   gap: 30px;
 
+  @media (max-width: 400px) {
+    min-width: 100%;   
+  }
+
   > a {
     width: 170px;
     height: 40px;
@@ -129,4 +157,16 @@ export const Buttons = styled.div`
       height: 50px;
     }
   }
+
+  @media (max-width: 550px) {
+    height: 120px;
+    flex-direction: column;
+
+    a {
+      width: 80%;
+      height: 50px;
+    }
+  }
+
+  
 `;

@@ -29,30 +29,30 @@ export function About({ toggleTheme }) {
 
         <BoxAbout>
           <BoxImage>
-            <img src="https://github.com/leandrosiq1.png" />
+            <img src="https://github.com/leandrosiq1.png" alt="Github Leandrosiq1" />
             <nav>
               <ul>
                 <li>
-                  <a target="_blank" href="https://github.com/leandrosiq1">
-                    <img src={githubImg} />
+                  <a target="_blank" rel="noreferrer" href="https://github.com/leandrosiq1">
+                    <img src={githubImg} alt="Github" />
                   </a>
                 </li>
 
                 <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/leandrosiq1/">
-                    <img src={linkedinImg} />
+                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/leandrosiq1/">
+                    <img src={linkedinImg} alt="Linkedin" />
                   </a>
                 </li>
 
                 <li>
-                  <a target="_blank" href="mailto:le_kts12@hotmail.com">
-                    <img src={gmail} />
+                  <a target="_blank" rel="noreferrer" href="mailto:le_kts12@hotmail.com">
+                    <img src={gmail} alt="Gmail" />
                   </a>
                 </li>
 
                 <li>
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=5519999669175">
-                    <img src={whatsappImg} />
+                  <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5519999669175">
+                    <img src={whatsappImg} alt="Whatsapp" />
                   </a>
                 </li>
               </ul>
@@ -73,25 +73,25 @@ export function About({ toggleTheme }) {
             <Languages>
               <ul>
                 <li>
-                  <img src={htmlImg} />
+                  <img src={htmlImg} alt="Ferramenta Html" />
                 </li>
                 <li>
-                  <img src={cssImg} />
+                  <img src={cssImg} alt="Ferramenta Css" />
                 </li>
                 <li>
-                  <img src={scssImg} />
+                  <img src={scssImg} alt="Ferramenta Sass" />
                 </li>
                 <li>
-                  <img src={javascriptImg} />
+                  <img src={javascriptImg} alt="Ferramenta Javascript" />
                 </li>
                 <li>
-                  <img src={reactImg} />
+                  <img src={reactImg} alt="Ferramenta React Js" />
                 </li>
                 <li>
-                  <img src={mongoImg} />
+                  <img src={mongoImg} alt="Ferramenta Mongo.db" />
                 </li>
                 <li>
-                  <img src={sqlImg} />
+                  <img src={sqlImg} alt="Ferramenta Sql" />
                 </li>
               </ul>
             </Languages>

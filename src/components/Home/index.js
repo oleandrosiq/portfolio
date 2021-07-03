@@ -20,11 +20,11 @@ export function Home({ toggleTheme }) {
             </p>
 
             <Buttons>
-              <a target="_blank" href="https://cdn.discordapp.com/attachments/766834970131169291/860141330415616060/curriculo-leandro.pdf">
+              <a target="_blank" rel="noreferrer" href="https://cdn.discordapp.com/attachments/766834970131169291/860141330415616060/curriculo-leandro.pdf">
                 Curriculo
               </a>
 
-              <a target="_blank" href="https://github.com/leandrosiq1">
+              <a target="_blank" rel="noreferrer" href="https://github.com/leandrosiq1">
                 Github
               </a>
             </Buttons>

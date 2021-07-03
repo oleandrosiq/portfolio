@@ -117,6 +117,17 @@ export const ContainerMobile = styled.div`
     }
   }
 
+  @media (max-width: 550px) {
+    > a {
+      font-size: 25px;
+    }
+
+    > div.menu-mobile {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   > div.menu-mobile {
     width: 50px;
     height: 50px;

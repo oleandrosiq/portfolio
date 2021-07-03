@@ -91,6 +91,11 @@ export const BoxImage = styled.div`
   @media (max-width: 1080px) {
     margin: 0 auto;
   }
+
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const Content = styled.div`
@@ -137,8 +142,7 @@ export const Title = styled.div`
 `;
 
 export const Languages = styled.div`
-  width: max-content;
-  height: 70px;
+  max-width: 500px;
 
   padding: 20px;
 
@@ -146,6 +150,7 @@ export const Languages = styled.div`
     list-style: none;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 
@@ -155,5 +160,11 @@ export const Languages = styled.div`
         height: 40px;
       }
     } 
+  }
+
+  @media (max-width: 550px) {
+    ul {
+      flex-wrap: wrap;
+    }
   }
 `;

@@ -50,6 +50,10 @@ export const Container = styled.div`
     visibility: visible;
     opacity: 1;
   }
+
+  @media (max-width: 400px) {
+    min-width: 90%; 
+  }
 `;
 
 export const Banner = styled.div`
@@ -87,6 +91,10 @@ export const Description = styled.div`
     text-align: justify;
     color: ${props => props.theme.colors.text}
   }
+
+  @media (max-width: 400px) {
+    min-height: 400px;
+  }
 `;
 
 export const Footer = styled.footer`
@@ -118,6 +126,15 @@ export const Footer = styled.footer`
       }
 
       > a {
+        > img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        
         > img {
           width: 45px;
           height: 45px;
