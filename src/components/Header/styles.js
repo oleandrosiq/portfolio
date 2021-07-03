@@ -27,16 +27,12 @@ export const Container = styled.header`
       color: ${props => props.theme.colors.primary};
     }
   }
-
-  @media (max-width: 620px) {
-    flex-direction: column;
-    height: 140px;
-
-    padding: 20px 0;
-  }
 `;
 
 export const Nav = styled.nav`
+  @media (max-width: 700px) {
+    display: none;
+  }
   
   > ul {
     display: flex;

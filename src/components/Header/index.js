@@ -2,7 +2,7 @@ import Switch from 'react-switch';
 import { shade } from 'polished';
 
 import { Link } from 'react-router-dom';
-import { Container, Nav } from './styles';
+import { Container, Nav, NavMobile, MenuMobile } from './styles';
 
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';

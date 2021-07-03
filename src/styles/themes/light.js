@@ -2,8 +2,8 @@ export default {
   title: "light",
 
   colors: {
-    primary: "#fd1371",
-    shape: "#fd1371",
+    primary: "#007fff",
+    shape: "#007fff",
     button: "#fff",
     boxHover: "#FF9EF0",
 
