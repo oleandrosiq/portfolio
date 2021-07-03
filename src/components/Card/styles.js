@@ -75,7 +75,7 @@ export const Title = styled.h1`
 
 export const Description = styled.div`
   width: 100%;
-  min-height: 300px;
+  height: min(350px, 90vw);
 
   background: ${props => props.theme.colors.background};
   
