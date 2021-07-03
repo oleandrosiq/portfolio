@@ -61,9 +61,10 @@ export function Portfolio({ toggleTheme }) {
       <Header portfolio toggleTheme={toggleTheme} />
       <Message text="🥰 Espero que goste de" subText="meus projetos!" />
       <Cards>
-        { projects.map(project => {
+        { projects.map((project, index) => {
           return (
             <Card 
+              key={index}
               title={project.title}
               description={project.description}
               image={project.image}

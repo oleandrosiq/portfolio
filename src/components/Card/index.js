@@ -20,7 +20,7 @@ export function Card({ image, title, description, urlProject, urlGithub, languag
       </div>
 
       <Banner>
-        <img src={image} />
+        <img src={image} alt="Projeto" />
       </Banner>
 
       <Description>
@@ -32,19 +32,19 @@ export function Card({ image, title, description, urlProject, urlGithub, languag
         <Footer>
           <ul>
             <li title="Visitar Projeto">
-              <a target="_blank" href={urlProject}>
-                <img src={externalImg} />
+              <a target="_blank" rel="noreferrer" href={urlProject}>
+                <img src={externalImg} alt="Link Externo" />
               </a>
             </li>
             <li title="Visualizar código do Projeto">
-              <a target="_blank" href={urlGithub}>
-                <img src={githubImg} />
+              <a target="_blank" rel="noreferrer" href={`${urlGithub}`}>
+                <img src={githubImg} alt="Github" />
               </a>
             </li>
             <li onClick={() => handleMouseOver()} title="Visualizar Linguagens utilizadas no Projeto">
-              <a target="_blank">
-                <img src={codeImg} />
-              </a>
+              <button href="">
+                <img src={codeImg} alt="Código" />
+              </button>
             </li>
           </ul>
         </Footer>

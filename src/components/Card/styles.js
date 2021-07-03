@@ -50,6 +50,10 @@ export const Container = styled.div`
     visibility: visible;
     opacity: 1;
   }
+
+  @media (max-width: 400px) {
+    min-width: 90%; 
+  }
 `;
 
 export const Banner = styled.div`
@@ -75,7 +79,11 @@ export const Title = styled.h1`
 
 export const Description = styled.div`
   width: 100%;
+<<<<<<< HEAD
   min-height: 350px;
+=======
+  height: min(350px, 90vw);
+>>>>>>> e498081e94a546bad38d0ca46dd43488d6a52ad4
 
   background: ${props => props.theme.colors.background};
   
@@ -86,6 +94,10 @@ export const Description = styled.div`
   > p {
     text-align: justify;
     color: ${props => props.theme.colors.text}
+  }
+
+  @media (max-width: 400px) {
+    min-height: 400px;
   }
 `;
 
@@ -118,6 +130,15 @@ export const Footer = styled.footer`
       }
 
       > a {
+        > img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        
         > img {
           width: 45px;
           height: 45px;
