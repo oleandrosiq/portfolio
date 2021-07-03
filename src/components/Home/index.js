@@ -16,7 +16,7 @@ export function Home({ toggleTheme }) {
             <h2>Desenvolvedor Front-End Jr.</h2>
 
             <p>
-              👨‍💻 Um Desenvolvedor apaixonado por tecnologia, que pretende mudar a vida de milhares de pessoas através dela.
+              👨‍💻 Um Desenvolvedor apaixonado por tecnologia, que pretende impactar a vida de milhares de pessoas através dela.
             </p>
 
             <Buttons>

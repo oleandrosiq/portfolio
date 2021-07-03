@@ -61,10 +61,13 @@ export function About({ toggleTheme }) {
 
           <Content>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              Desenvolvedor front-end Jr, atualmente venho estudando muito e me aprimorando a cada dia afim de me tornar um profissional competente e completo.
               <br />
               <br />
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              Começei na área faz um pouco mais de 1 ano, nesse tempo eu estive estudando e focando somente nisso para trabalhar com o que eu amo que é Tecnologia, atualmente estou 
+              focado em aprimorar e evoluir na ferramenta React JS, no momento estou fazendo o Ignite da Rocketseat.
+              <br />
+              Estou em busca da minha primeira oportunidade na área.
             </p>
 
             <Languages>

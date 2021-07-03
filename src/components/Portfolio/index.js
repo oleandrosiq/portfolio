@@ -8,7 +8,7 @@ export function Portfolio({ toggleTheme }) {
   const projects = [
     {
       title: "Página Slick",
-      description: "Uma landing page desenvolvida para praticar a construção de um layout, Aprendi bastante sobre Flex-box.",
+      description: "landing page desenvolvida para praticar a construção de um layout, Aprendi bastante sobre Flex-box.",
       image: "https://media.discordapp.net/attachments/803759044463558727/860491868072706058/unknown.png?width=1407&height=630",
       urlProject: "https://slick1.netlify.app/",
       urlGithub: "https://github.com/leandrosiq1/slick",
@@ -16,7 +16,7 @@ export function Portfolio({ toggleTheme }) {
     },
     {
       title: "Página Carfix",
-      description: "Uma landing page desenvolvida para praticar a construção de um layout e um carrosel, aprendi a fazer um carrosel com javascript puro.",
+      description: "landing page desenvolvida para praticar a construção de um layout e um carrosel, aprendi a fazer um carrosel com javascript puro.",
       image: "https://media.discordapp.net/attachments/803759044463558727/860495191965433856/unknown.png?width=1226&height=630",
       urlProject: "https://carfixx.netlify.app/",
       urlGithub: "https://github.com/leandrosiq1/carfix",
@@ -52,7 +52,7 @@ export function Portfolio({ toggleTheme }) {
       image: "https://media.discordapp.net/attachments/803759044463558727/860516752163995678/unknown.png?width=1244&height=630",
       urlProject: "https://letmeask-5851f.web.app/",
       urlGithub: "https://github.com/leandroSiq1/letmeask",
-      languages: "Typescript, javascript, scss, html, css, arroz",
+      languages: "Typescript, javascript, scss, html, css",
     },
   ];
 
