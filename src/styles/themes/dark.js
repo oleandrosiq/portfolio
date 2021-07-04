@@ -2,11 +2,10 @@ const theme = {
   title: "dark",
 
   colors: {
-    primary: "#04d361",
-    button: "#04d361",
-
+    primary: "#007fff",
+    button: "#007fff",
+    boxHover: "#80d9ff",
     shape: "#202024",
-    boxHover: "#64fff0",
 
     background: "#121214",
     text: "#fff",
