@@ -16,6 +16,12 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 620px) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   > a {
     font-size: 33px;
     color: ${props => props.theme.colors.text};
@@ -34,7 +40,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.nav`
-  
+
   > ul {
     display: flex;
     align-items: center;
