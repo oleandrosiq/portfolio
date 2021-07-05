@@ -8,9 +8,11 @@ import { Container, Nav, Wrapper, WrapperMobile, NavMobile, ContainerMobile } fr
 
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
+import { MyThemeContext } from '../../contexts/MyThemeContext';
 
-export function Header({ home, about, portfolio, toggleTheme }) {
+export function Header({ home, about, portfolio }) {
   const { title, colors } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(MyThemeContext);
   const [navMobile, setNavMobile] = useState(false);
 
   function handleNavMobile() {

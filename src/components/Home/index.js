@@ -1,14 +1,16 @@
+
 import { Container, Main, Content, Image, Buttons, Wrapper } from './styles';
 
 import { Header } from '../Header';
 import { Message } from '../Message';
 
-export function Home({ toggleTheme }) {
+export function Home() {
+ 
   return (
     <Container>
-      <Header home toggleTheme={toggleTheme} />
+      <Header home />
       <Message text="👋 Bem-vindo(a) ao meu Portfólio" />
-
+      
       <Wrapper>
         <Main>
           <Content>
