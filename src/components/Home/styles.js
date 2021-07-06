@@ -138,11 +138,17 @@ export const Buttons = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 
     color: var(--color-white);
   
     text-decoration: none;
     transition: .2s;
+
+    > img {
+      width: 30px;
+      height: 30px;
+    }
 
     &:hover {
       transform: scale(1.05);

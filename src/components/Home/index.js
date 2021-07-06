@@ -4,6 +4,8 @@ import { Container, Main, Content, Image, Buttons, Wrapper } from './styles';
 import { Header } from '../Header';
 import { Message } from '../Message';
 
+import downloadIcon from '../../assets/images/download-icon.svg';
+
 export function Home() {
  
   return (
@@ -22,7 +24,8 @@ export function Home() {
             </p>
 
             <Buttons>
-              <a target="_blank" rel="noreferrer" href="https://cdn.discordapp.com/attachments/766834970131169291/860141330415616060/curriculo-leandro.pdf">
+              <a target="_blank" rel="noreferrer" href="https://cdn.discordapp.com/attachments/801224857550454817/861939616248496138/curriculo-leandrosiq.pdf">
+                <img src={downloadIcon} alt="Download curriculo" />
                 Curriculo
               </a>
 

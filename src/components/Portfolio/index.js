@@ -40,7 +40,7 @@ export function Portfolio({ toggleTheme }) {
     },
     {
       title: "Twitter Clone",
-      description: "Projeto desenvolvido com auxilio do video da rocketseat, Aprendi muito sobre styled-components, responsividade e contrução de layout utilizando essa ferramenta.",
+      description: "Projeto desenvolvido com auxilio do video da rocketseat, Aprendi muito sobre styled-components, responsividade e construção de layout utilizando essa ferramenta.",
       image: "https://media.discordapp.net/attachments/803759044463558727/860507463051509780/unknown.png?width=1248&height=630",
       urlProject: "https://siqclone-twitter.netlify.app/",
       urlGithub: "https://github.com/leandroSiq1/twitter-clone",
@@ -48,7 +48,7 @@ export function Portfolio({ toggleTheme }) {
     },
     {
       title: "Letmeask",
-      description: "Projeto desenvolvido na NLW da rocketseat, aprendi sobre Context API, autenticação com o firebase e oque eu mais adorei foi aprender a criar meus propios hooks quando eu percebo que vou utilizar a mesma funcionaliade diversas vezes na minha aplicação. ",
+      description: "Projeto desenvolvido na NLW da rocketseat, aprendi sobre Context API, autenticação com o firebase e oque eu mais adorei foi aprender a criar meus proprio hooks quando eu percebo que vou utilizar a mesma funcionaliade diversas vezes na minha aplicação. ",
       image: "https://media.discordapp.net/attachments/803759044463558727/860516752163995678/unknown.png?width=1244&height=630",
       urlProject: "https://letmeask-5851f.web.app/",
       urlGithub: "https://github.com/leandroSiq1/letmeask",
