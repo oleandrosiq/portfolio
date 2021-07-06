@@ -4,7 +4,8 @@ export const Container = styled.header`
   width: 100%;
 
   border-bottom: 1px solid ${props => props.theme.colors.shape};
-  background: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.background};
+  transition: background-color 1s ease-in-out;
 `;
 
 export const Wrapper = styled.div`

@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--color-background);
     color: var(--color-white);
+    transition: background-color 1s ease-in-out;
   }
 
   :root {
