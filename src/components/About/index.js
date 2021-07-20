@@ -13,8 +13,8 @@ import cssImg from '../../assets/images/css.svg';
 import scssImg from '../../assets/images/scss.svg';
 import javascriptImg from '../../assets/images/javascript.svg';
 import reactImg from '../../assets/images/react.svg';
-import mongoImg from '../../assets/images/mongo.svg';
-import sqlImg from '../../assets/images/sql.svg';
+import nextjsImg from '../../assets/images/nextjs.png'
+import typescriptImg from '../../assets/images/typescript.svg';
 
 import githubImg from '../../assets/images/github.svg';
 import linkedinImg from '../../assets/images/linkedin.svg';
@@ -88,10 +88,10 @@ export function About({ toggleTheme }) {
                   <img src={reactImg} alt="Ferramenta React Js" />
                 </li>
                 <li>
-                  <img src={mongoImg} alt="Ferramenta Mongo.db" />
+                  <img src={nextjsImg} alt="Ferramenta NextJS" />
                 </li>
                 <li>
-                  <img src={sqlImg} alt="Ferramenta Sql" />
+                  <img src={typescriptImg} alt="Ferramenta Typescript" />
                 </li>
               </ul>
             </Languages>
