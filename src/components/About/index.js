@@ -65,9 +65,13 @@ export function About({ toggleTheme }) {
               <br />
               <br />
               Começei na área faz um pouco mais de 1 ano, nesse tempo eu estive estudando e focando somente nisso para trabalhar com o que eu amo que é Tecnologia, atualmente estou 
-              focado em aprimorar e evoluir na ferramenta React JS, no momento estou fazendo o Ignite da Rocketseat.
+              focado em aprimorar e evoluir na ferramenta <span>React JS</span>, no momento estou fazendo o Ignite da Rocketseat.
               <br />
-              Estou em busca da minha primeira oportunidade na área.
+              
+              <br />
+              Eu estou me especializando em <span>React Js</span> e entendendo mais sobre o universo Front-End e como criar interfaces performaticas, estou aprendendo também sobre <span>NextJS</span> pra utilizar as suas principais ferramentas que é o <span>SSR</span> e o <span>SSG</span>.
+              <br />
+              <span>Estou em busca da minha primeira oportunidade na área.</span>
             </p>
 
             <Languages>

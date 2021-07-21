@@ -1,54 +1,51 @@
-import { useState } from 'react';
-import { Container, Banner, Description, Title, Footer } from './styles';
+import { 
+  Container, 
+  BoxImage, 
+  Content, 
+  Links,
+  Languages,
+  Description,
+} from './styles';
 
 import externalImg from '../../assets/images/external.svg';
 import githubImg from '../../assets/images/github.svg';
-import codeImg from '../../assets/images/code.svg';
 
 export function Card({ image, title, description, urlProject, urlGithub, languages }) {
-  const [isLanguages, setIsLanguages] = useState(false);
-
-  function handleMouseOver() {
-    setIsLanguages(!isLanguages);
-  }
-
   return (
     <Container>
-      <div className={`languages ${ isLanguages && 'active'}`}>
-        <span>{languages}</span>
-        <div className="box" />
-      </div>
+      <BoxImage>
+        <img src={image} alt={title} />
+      </BoxImage>
 
-      <Banner>
-        <img src={image} alt="Projeto" />
-      </Banner>
+      <Content>
+        <h1>{title}</h1>
+               
+        <Description>
+          <p>
+            {description}
+          </p>
+        </Description>
 
-      <Description>
-        <Title>{title}</Title>
-        <p>
-          {description}
-        </p>  
-
-        <Footer>
+        <Links>     
+          <p>LINKS</p>
           <ul>
-            <li title="Visitar Projeto">
-              <a target="_blank" rel="noreferrer" href={urlProject}>
-                <img src={externalImg} alt="Link Externo" />
+            <li>
+              <a target="_blank" rel="noreferrer" href={urlProject} title="Visitar Projeto">
+                <img src={externalImg} alt="Visitar Projeto" />
               </a>
             </li>
-            <li title="Visualizar código do Projeto">
-              <a target="_blank" rel="noreferrer" href={`${urlGithub}`}>
-                <img src={githubImg} alt="Github" />
+            <li>
+              <a target="_blank" rel="noreferrer" href={urlGithub} title="Visitar Github do projeto">
+                <img src={githubImg} alt="Visitar Github do projeto" />
               </a>
-            </li>
-            <li onClick={() => handleMouseOver()} title="Visualizar Linguagens utilizadas no Projeto">
-              <button href="">
-                <img src={codeImg} alt="Código" />
-              </button>
             </li>
           </ul>
-        </Footer>
-      </Description>
+          <Languages>
+            {languages}
+          </Languages>
+        </Links>
+
+      </Content>
     </Container>
   );  
 }

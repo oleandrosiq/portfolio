@@ -10,10 +10,8 @@ export const Cards = styled.div`
   
   padding-bottom: 100px;
   margin: 20px auto;
-
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-direction: column;
+  gap: 30px;
 `;

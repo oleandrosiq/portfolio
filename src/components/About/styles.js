@@ -33,6 +33,7 @@ export const BoxImage = styled.div`
   border-radius: 50%;
   border: 4px solid ${props => props.theme.colors.primary};
   margin-right: 100px;
+  margin-bottom: 100px;
 
   > img {
     width: 100%;
@@ -108,6 +109,10 @@ export const Content = styled.div`
   > p {
     padding: 20px;
     text-align: justify;
+
+    span {
+      color: ${props => props.theme.colors.primary};
+    }
   }
 
   > span {

@@ -1,146 +1,96 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 33.3%;
-  min-width: 400px;
-  max-width: 500px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-shape);
+  padding: 10px;
 
-  position: relative;
-
-  border: 1px solid ${props => props.theme.colors.shape};
-  transition: .2s;
+  transition: all .2s ease-in;
 
   &:hover {
     box-shadow: 0 0 10px ${props => props.theme.colors.boxHover};
   }
 
-  div.languages {
-    position: absolute;
-    top: -30px;
-    right: 0;
-
-    background: ${props => props.theme.colors.shape};  
-    border: 1px solid ${props => props.theme.colors.primary};
-    border-radius: 5px;
-    padding: 8px 30px;
-
-    text-transform: uppercase;
-    transition: .3s;
-
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-
-    > div.box {
-      width: 15px;
-      height: 15px;
-
-      background: ${props => props.theme.colors.shape};
-
-      transform: rotate(50deg);
-
-      position: absolute;
-      right: 0px;
-      right: 8px;
-    }
-  }
-
-  div.languages.active {
-    display: unset;
-    visibility: visible;
-    opacity: 1;
-  }
-
-  @media (max-width: 400px) {
-    min-width: 90%; 
+  @media (max-width: 1000px) {
+    flex-direction: column;
   }
 `;
 
-export const Banner = styled.div`
-  width: 100%;
-  height: 220px;
+export const BoxImage = styled.div`
+  height: 100%;
 
-  > img {
-    width: 100%;
+  img {
+    width: 400px;
     height: 100%;
 
-    object-fit: cover;
-    object-position: top;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 `;
 
-export const Title = styled.h1`
-  font-size: 23px;
-  color: ${props => props.theme.colors.primary};
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 
-  text-align: left;
-  padding-bottom: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    color: ${props => props.theme.colors.primary};
+  }
 `;
 
 export const Description = styled.div`
   width: 100%;
-  min-height: 350px;
-  height: min(350px, 90vw);
+  height: max-content;
 
-  background: ${props => props.theme.colors.background};
-  
-  position: relative;
-  padding: 20px;
-  text-align: center;
-
-  > p {
-    text-align: justify;
-    color: ${props => props.theme.colors.text}
-  }
-
-  @media (max-width: 400px) {
-    min-height: 400px;
+  p {
+    color: ${props => props.theme.colors.text};
   }
 `;
 
-export const Footer = styled.footer`
-  width: 100%;
-  height: 70px;
+export const Links = styled.nav`
+  display: flex;
+  align-items: center;
 
-  border-top: 1px solid ${props => props.theme.colors.shape};
+  gap: 10px;
+  color: ${props => props.theme.colors.primary};
 
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  @media (max-width: 1000px) {
+    flex-direction: column;
 
-  > ul {
-    height: 100%;
+    p {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 35px;
+    gap: 10px;
 
-    list-style: none;
-
-    > li {
-      cursor: pointer;
-      transition: .2s;
-
-      &:hover {
-        transform: scale(1.09);
-      }
-
-      > a {
-        > img {
-          width: 45px;
-          height: 45px;
-        }
-      }
-
-      button {
-        cursor: pointer;
-        
-        > img {
-          width: 45px;
-          height: 45px;
+    li {
+      a {
+        img {
+          width: 30px;
+          height: 30px;
         }
       }
     }
   }
+`;
+
+export const Languages = styled.div`
+  margin-left: 50px;
+  color: ${props => props.theme.colors.primary};
 `;
