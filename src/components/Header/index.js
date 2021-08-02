@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import Switch from 'react-switch';
 import { shade } from 'polished';
@@ -6,7 +6,6 @@ import { shade } from 'polished';
 import { Link } from 'react-router-dom';
 import { Container, Nav, Wrapper, WrapperMobile, NavMobile, ContainerMobile } from './styles';
 
-import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { MyThemeContext } from '../../contexts/MyThemeContext';
 

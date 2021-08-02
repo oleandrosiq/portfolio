@@ -10,7 +10,16 @@ import {
 import externalImg from '../../assets/images/external.svg';
 import githubImg from '../../assets/images/github.svg';
 
-export function Card({ image, title, description, urlProject, urlGithub, languages }) {
+interface CardProps {
+  image: string;
+  title: string;
+  description: string;
+  urlProject: string;
+  urlGithub: string;
+  languages: string;
+}
+
+export function Card({ image, title, description, urlProject, urlGithub, languages }: CardProps) {
   return (
     <Container>
       <BoxImage>

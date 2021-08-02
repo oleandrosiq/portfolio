@@ -1,6 +1,11 @@
 import { Container } from './styles';
 
-export function Message({ text, subText }) {
+interface MessageProps {
+  text: string;
+  subText?: string;
+}
+
+export function Message({ text, subText }: MessageProps) {
   return (
     <Container>
       {text} <br />

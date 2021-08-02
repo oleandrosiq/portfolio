@@ -1,13 +1,17 @@
-import { createContext } from 'react';
+import { createContext, ReactNode } from 'react';
 
 import dark from '../styles/themes/dark';
 import light from '../styles/themes/light';
 
 import { usePersistedTheme } from '../utils/usePersistedTheme';
 
+interface ThemeContextProviderProps {
+  children: ReactNode;
+}
+
 export const MyThemeContext = createContext({});
 
-export function ThemeContextProvider({ children }) {
+export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
   const [theme, setTheme] = usePersistedTheme('theme:portfolio', dark);
 
   function toggleTheme() {

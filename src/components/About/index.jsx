@@ -1,5 +1,5 @@
-import { Header } from '../../components/Header';
-import { Message } from '../../components/Message';
+import { Header } from '../Header';
+import { Message } from '../Message';
 import { 
   Container, 
   BoxAbout, 
